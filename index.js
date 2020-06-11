@@ -67,6 +67,30 @@ inquirer.prompt([
                 if (err) throw err;
                 console.log("Added body to README");
             });
+            fs.appendFile("README.md", `[Questions](##Questions)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
+            fs.appendFile("README.md", `[Installation](##Installation)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
+            fs.appendFile("README.md", `[Usage](##Usage)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
+            fs.appendFile("README.md", `[License](##License)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
+            fs.appendFile("README.md", `[Contributing](##Contributing)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
+            fs.appendFile("README.md", `[Tests](##Tests)` + "\n\n", (err) => {
+                if (err) throw err;
+                console.log("Added body to README");
+            });
             fs.appendFile("README.md", "## Installation" + "\n" + installation + "\n\n", (err) => {
                 if (err) throw err;
                 console.log("Added body to README");
@@ -91,6 +115,8 @@ inquirer.prompt([
                 if (err) throw err;
                 console.log("Added body to README");
             });
+
+            // <a name="Tests"></a>
             // fs.appendFile("README.md", "* " + array.forEach(element => {
             //     return element;
             //     console.log(element);
